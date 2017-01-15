@@ -17,7 +17,6 @@ public class NumberGuess {
 		Scanner reader = new Scanner(System.in);
 		name = reader.next(); 
 		int score = 100;
-		score -= 0 ;
 		System.out.	println("Initial Score: " + score);
 
 		while(1 == 1){
@@ -40,10 +39,10 @@ public class NumberGuess {
 				score = score - 5;
 				System.out.println("HOT, you need to go a bit higher :)");
 			} else if(userGuess > solution && absUserGuess >= 15){
-				score = score - 5;
+				score -=5;
 				System.out.println("COLD, not so high!!");
 			} else if(userGuess > solution && absUserGuess < 15){
-				score = score - 10;
+				score -=10;
 				System.out.println("HOT, you went only a bit too high ;)");
 			}
 			if(score <= 0){
