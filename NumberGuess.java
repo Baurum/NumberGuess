@@ -1,6 +1,11 @@
 import java.lang.Math;
 import java.util.Random;
 import java.util.Scanner;
+/*****************************************************************************
+* Guess what random number the computer is thinking 
+*
+* Created by Marcos on 15/01/2017
+*****************************************************************************/
 public class NumberGuess {
 	public static void main(String[] args){
 		
@@ -17,7 +22,6 @@ public class NumberGuess {
 			}
 			int userGuess = Integer.parseInt(userInput);
 			int absUserGuess = Math.abs(userGuess - solution);
-			// If userGuess == solution then print a succesfuli message & exit
 			if(userGuess == solution){
 				System.out.println("(: CONGRATULATIONS!!! :')");
 				break;
