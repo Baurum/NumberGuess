@@ -16,6 +16,7 @@ public class NumberGuess {
 		String name = "";
 		Scanner reader = new Scanner(System.in);
 		name = reader.next(); 
+		
 
 
 
@@ -35,7 +36,7 @@ public class NumberGuess {
 				System.out.println("COLD, you need to go much higher!!");
 			} else if(userGuess < solution && absUserGuess < 15){
 				System.out.println("HOT, you need to go a bit higher :)");
-			} else if(userGuess > solution && absUserGuess > 15){
+			} else if(userGuess > solution && absUserGuess => 15){
 				System.out.println("COLD, not so high!!");
 			} else if(userGuess > solution && absUserGuess < 15){
 				System.out.println("HOT, you went only a bit too high ;)");
